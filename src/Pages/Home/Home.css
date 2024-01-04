@@ -1,0 +1,36 @@
+.search-box {
+  width: 60%;
+  margin-bottom: 40px;
+  position: sticky;
+  top: 5%;
+  left: 0;
+  z-index: 2;
+  transition-duration: 0.25s;
+}
+
+.search-box:focus {
+  background: var(--primary-color);
+  box-shadow: 0px 3px 10px #80808077;
+  color: #fff;
+}
+
+.list {
+  width: 100%;
+  padding-top: 50px;
+  border-radius: 5px;
+  overflow-x: scroll;
+  position: relative;
+}
+
+.list::-webkit-scrollbar {
+  display: none;
+}
+
+.list-title {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+}

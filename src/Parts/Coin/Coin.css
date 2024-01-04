@@ -1,0 +1,38 @@
+.list-item {
+  min-width: 700px;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #c0c0c0;
+  display: grid;
+  grid-template-columns: repeat(6 , 1fr);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 12px;
+  color: black;
+}
+
+.list-item:last-child {
+  border: none;
+}
+
+.image {
+  width: auto;
+  max-width: 40px;
+  height: 40px;
+  margin: 0 auto;
+}
+
+.name,
+.green-price,
+.red-price {
+  font-weight: bold;
+}
+
+.red-price {
+  color: rgb(255, 38, 38);
+}
+
+.green-price {
+  color: rgb(0, 204, 0);
+}
