@@ -20,6 +20,7 @@ form {
     display: flex;
     flex-direction: column;
     margin-bottom: 15px;
+    position: relative;
 }
 
 .form-input {
@@ -39,6 +40,24 @@ form {
     margin-top: 5px;
     font-size: 14px;
     color: #c40000;
+}
+
+.password-icon {
+    padding: 10px;
+    background: no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    right: 3%;
+    transform: translateY(-50%);
+}
+
+.show-password {
+    background-image: url(../Images/visible.png);
+}
+
+.hide-password {
+    background-image: url(../Images/invisible.png);
 }
 
 .checkbox-container {

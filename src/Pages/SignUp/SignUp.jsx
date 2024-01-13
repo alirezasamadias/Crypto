@@ -23,6 +23,7 @@ const SignUp = () => {
 
     const [errors, setErrors] = useState({});
     const [touched, setTouched] = useState({});
+    const [showPassword, setShowPassword] = useState();
     const [submit, setSubmit] = useState();
 
     useEffect(() => {
@@ -31,6 +32,14 @@ const SignUp = () => {
 
     const focusHandler = event => {
         setTouched({ ...touched, [event.target.name]: true });
+    };
+
+    const passwordHandler = () => {
+        if (showPassword) {
+            setShowPassword(false);
+        } else {
+            setShowPassword(true);
+        }
     };
 
     const changeHandler = event => {
@@ -80,12 +89,14 @@ const SignUp = () => {
                 <div className='form-filed'>
                     <input placeholder='Password'
                     className={`form-input ${errors.password && touched.password ? 'uncompleted' : ''}`}
-                        type='password'
+                        type= {showPassword ? 'text' : 'password'}
                         name='password'
                         value={data.password}
                         onChange={changeHandler}/>
 
                     {errors.password && touched.password && <span>{errors.password}</span>}
+
+                    <i className={`password-icon ${showPassword ? 'show-password' : 'hide-password'}`} onClick={passwordHandler}></i>
                 </div>
                 <div className='form-filed'>
                     <input placeholder='ConfirmPassword'
@@ -94,6 +105,7 @@ const SignUp = () => {
                         name='confirmPassword'
                         value={data.confirmPassword}
                         onChange={changeHandler}/>
+
                     {errors.confirmPassword && touched.confirmPassword && <span>{errors.confirmPassword}</span>}
                 </div>
                 <div className='form-filed'>

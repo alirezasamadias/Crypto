@@ -11,7 +11,7 @@ function App() {
       <SiteLoader />
       <Routes>
         <Route path='/login' element={<Login/>} />
-        <Route path='/Sign-up' element={<SignUp/>} />
+        <Route path='/sign-up' element={<SignUp/>} />
         <Route path='/home' element={<Home/>} /> 
         <Route path='/'  element={<Navigate to='/login' replace/>} />
       </Routes>
