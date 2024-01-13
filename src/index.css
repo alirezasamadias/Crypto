@@ -2,7 +2,7 @@
 @keyframes show-content {
   100% {
     opacity: 1;
-    translate: 0 0;
+    transform: translate(0,0);
   }
 }
 
@@ -109,7 +109,7 @@ main {
 
 .main > :nth-child(n) {
   opacity: 0; 
-  translate: 0 -2vw;
+  transform: translate(0,-2vw);
   animation: show-content 0.5s 0.7s forwards;
 }
 
