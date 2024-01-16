@@ -47,9 +47,8 @@ form {
     background: no-repeat center center;
     background-size: cover;
     position: absolute;
-    top: 50%;
+    top: 15px;
     right: 3%;
-    transform: translateY(-50%);
 }
 
 .show-password {
