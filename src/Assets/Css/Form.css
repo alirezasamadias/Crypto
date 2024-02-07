@@ -52,11 +52,11 @@ form {
 }
 
 .show-password {
-    background-image: url(../Images/visible.png);
+    background-image: url(../Images/Visible.png);
 }
 
 .hide-password {
-    background-image: url(../Images/invisible.png);
+    background-image: url(../Images/Invisible.png);
 }
 
 .checkbox-container {
