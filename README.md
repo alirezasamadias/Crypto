@@ -1,6 +1,6 @@
 # Crypto
 
-![alt text](src/Assets/Images/Screen-Project.png)
+![Screen Project](src/Assets/Images/Screen-Project.png)
 
 ## Url
 https://crypto-7nfe.onrender.com
