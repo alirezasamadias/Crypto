@@ -3,7 +3,8 @@
 ![Screen Project](src/Assets/Images/Screen-Project.png)
 
 ## Url
-https://crypto-7nfe.onrender.com
+https://cryptoreact2023.netlify.app/
+
 
 ### About
 A small project with React and using axios to get data This project is a cryptocurrency search panel and also has a brief login form.
